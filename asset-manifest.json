@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/story-maker/static/js/main.a67201fa.chunk.js",
-    "main.js.map": "/story-maker/static/js/main.a67201fa.chunk.js.map",
+    "main.js": "/story-maker/static/js/main.32e61b11.chunk.js",
+    "main.js.map": "/story-maker/static/js/main.32e61b11.chunk.js.map",
     "runtime-main.js": "/story-maker/static/js/runtime-main.bed87542.js",
     "runtime-main.js.map": "/story-maker/static/js/runtime-main.bed87542.js.map",
     "static/js/2.c3c77a2c.chunk.js": "/story-maker/static/js/2.c3c77a2c.chunk.js",
@@ -23,6 +23,6 @@
   "entrypoints": [
     "static/js/runtime-main.bed87542.js",
     "static/js/3.3dcf430b.chunk.js",
-    "static/js/main.a67201fa.chunk.js"
+    "static/js/main.32e61b11.chunk.js"
   ]
 }
