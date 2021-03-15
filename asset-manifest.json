@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/story-maker/static/js/main.0747a2c0.chunk.js",
-    "main.js.map": "/story-maker/static/js/main.0747a2c0.chunk.js.map",
+    "main.js": "/story-maker/static/js/main.a67201fa.chunk.js",
+    "main.js.map": "/story-maker/static/js/main.a67201fa.chunk.js.map",
     "runtime-main.js": "/story-maker/static/js/runtime-main.bed87542.js",
     "runtime-main.js.map": "/story-maker/static/js/runtime-main.bed87542.js.map",
     "static/js/2.c3c77a2c.chunk.js": "/story-maker/static/js/2.c3c77a2c.chunk.js",
@@ -14,11 +14,15 @@
     "static/js/2.c3c77a2c.chunk.js.LICENSE.txt": "/story-maker/static/js/2.c3c77a2c.chunk.js.LICENSE.txt",
     "static/js/3.3dcf430b.chunk.js.LICENSE.txt": "/story-maker/static/js/3.3dcf430b.chunk.js.LICENSE.txt",
     "static/js/4.b3a4c2fd.chunk.js.LICENSE.txt": "/story-maker/static/js/4.b3a4c2fd.chunk.js.LICENSE.txt",
-    "static/media/bodyBackgroundImage01.1b056d20.jpg": "/story-maker/static/media/bodyBackgroundImage01.1b056d20.jpg"
+    "static/media/bodyBackgroundImage01.1b056d20.jpg": "/story-maker/static/media/bodyBackgroundImage01.1b056d20.jpg",
+    "static/media/bubble01.9ae44f46.png": "/story-maker/static/media/bubble01.9ae44f46.png",
+    "static/media/bubble03.02a3fd5a.png": "/story-maker/static/media/bubble03.02a3fd5a.png",
+    "static/media/bubble05.7954c6ca.png": "/story-maker/static/media/bubble05.7954c6ca.png",
+    "static/media/bubble07.63057a20.png": "/story-maker/static/media/bubble07.63057a20.png"
   },
   "entrypoints": [
     "static/js/runtime-main.bed87542.js",
     "static/js/3.3dcf430b.chunk.js",
-    "static/js/main.0747a2c0.chunk.js"
+    "static/js/main.a67201fa.chunk.js"
   ]
 }
