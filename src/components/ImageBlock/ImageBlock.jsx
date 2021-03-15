@@ -1,6 +1,6 @@
 import React from "react";
 import { Rnd } from "react-rnd";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 
 import {
   deleteGraphicFrameAC,

@@ -383,6 +383,7 @@ const appReducer = (state = initialState, action) => {
         ...state,
         graphicFrames: [],
         speechBubbles: [],
+        canvasColor: `#ffffff`,
       };
     }
 
