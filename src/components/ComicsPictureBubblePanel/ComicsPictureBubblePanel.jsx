@@ -1,6 +1,8 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 
+import { addNewComicsPictureBubbleAC } from "./../../redux/actions/actions";
+
 import {
   ComicsPictureBubblePanelContainer,
   ComicsPictureBubblePanelTitle,
@@ -12,8 +14,8 @@ const ComicsPictureBubblePanel = () => {
   const dispatch = useDispatch();
   const { comicsPictureBubbles } = useSelector(({ app }) => app);
 
-  const onBubbleClick = (bubbleId) => {
-    // dispatch(addNewTextFrameAC(bubbleId));
+  const onBubbleClick = (comicsPictureBubbleId) => {
+    dispatch(addNewComicsPictureBubbleAC(comicsPictureBubbleId));
   };
 
   return (

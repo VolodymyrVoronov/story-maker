@@ -258,6 +258,7 @@ const initialState = {
     { id: 8, comicsPictureBubbleType: comicsPictureBubble08 },
     { id: 9, comicsPictureBubbleType: comicsPictureBubble09 },
   ],
+  comicsPictureBubbleItems: [],
 };
 
 const appReducer = (state = initialState, action) => {
@@ -344,7 +345,7 @@ const appReducer = (state = initialState, action) => {
         (bubble) => bubble.id === action.speechBubbleId
       );
 
-      const newSpeedBubbles = {
+      const newSpeechBubble = {
         id: Date.now(),
         textBody: `Add new text here.`,
         bgImage: speechBubble[0].bubbleType,
@@ -352,7 +353,7 @@ const appReducer = (state = initialState, action) => {
       };
       return {
         ...state,
-        speechBubbles: [newSpeedBubbles, ...state.speechBubbles],
+        speechBubbles: [newSpeechBubble, ...state.speechBubbles],
       };
     }
 
@@ -399,11 +400,31 @@ const appReducer = (state = initialState, action) => {
       };
     }
 
+    case ActionType.ADD_NEW_COMICS_PICTURE_BUBBLE: {
+      const comicsPictureBubbleItem = state.comicsPictureBubbles.filter(
+        (bubble) => bubble.id === action.comicsPictureBubbleId
+      );
+
+      const newPictureBubble = {
+        id: Date.now(),
+        bgImage: comicsPictureBubbleItem[0].comicsPictureBubbleType,
+        zIndex: 40,
+      };
+      return {
+        ...state,
+        comicsPictureBubbleItems: [
+          newPictureBubble,
+          ...state.comicsPictureBubbleItems,
+        ],
+      };
+    }
+
     case ActionType.CLEAR_CANVAS: {
       return {
         ...state,
         graphicFrames: [],
         speechBubbles: [],
+        comicsPictureBubbleItems: [],
         canvasColor: `#ffffff`,
       };
     }

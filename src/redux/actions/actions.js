@@ -55,4 +55,9 @@ export const addNewTextBodyAC = makeActionCreator(
   `newText`
 );
 
+export const addNewComicsPictureBubbleAC = makeActionCreator(
+  ActionType.ADD_NEW_COMICS_PICTURE_BUBBLE,
+  `comicsPictureBubbleId`
+);
+
 export const clearCanvasAC = makeActionCreator(ActionType.CLEAR_CANVAS);

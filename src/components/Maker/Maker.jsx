@@ -12,6 +12,7 @@ import {
 
 import ImageBlock from "./../ImageBlock/ImageBlock";
 import TextBlock from "./../TextBlock/TextBlock";
+import PictureBubbleBlock from "./../PictureBubbleBlock/PictureBubbleBlock";
 import Button from "../UI/Button/Button";
 import CanvasColorControl from "./../CanvasColorControl/CanvasColorControl";
 import GraphicPanel from "./../GraphicPanel/GraphicPanel";
@@ -32,6 +33,7 @@ const Maker = () => {
     canvasColor,
     graphicFrames,
     speechBubbles,
+    comicsPictureBubbleItems,
   } = useSelector(({ app }) => app);
 
   const ref = React.useRef();
@@ -56,6 +58,10 @@ const Maker = () => {
 
   const onImageTextClick = (id) => {
     dispatch(setZIndexForTextFrameAC(id));
+  };
+
+  const onPictureBubbleBlockClick = (id) => {
+    console.log(id);
   };
 
   return (
@@ -119,6 +125,19 @@ const Maker = () => {
               bgImage={bgImage}
               zIndex={zIndex}
               onImageTextClick={onImageTextClick}
+            />
+          );
+        })}
+
+        {comicsPictureBubbleItems.map((comicsPictureBubbleItem) => {
+          const { id, bgImage, zIndex } = comicsPictureBubbleItem;
+          return (
+            <PictureBubbleBlock
+              key={id}
+              id={id}
+              bgImage={bgImage}
+              zIndex={zIndex}
+              onPictureBubbleBlockClick={onPictureBubbleBlockClick}
             />
           );
         })}
