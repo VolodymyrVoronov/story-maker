@@ -23,7 +23,7 @@ const CanvasColorControl = () => {
 
   return (
     <CanvasColorControlContainer>
-      <CanvasColorControlTitle>Canvas color</CanvasColorControlTitle>
+      <CanvasColorControlTitle>Canvas colors</CanvasColorControlTitle>
       <CanvasColorControlButtons>
         {canvasColorsPalette.map((canvasColor) => {
           const { id, color } = canvasColor;

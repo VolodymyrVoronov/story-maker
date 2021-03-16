@@ -19,7 +19,7 @@ const ComicsPictureBubblePanel = () => {
   return (
     <ComicsPictureBubblePanelContainer>
       <ComicsPictureBubblePanelTitle>
-        Picture bubble
+        Picture bubbles
       </ComicsPictureBubblePanelTitle>
       <ComicsPictureBubbles>
         {comicsPictureBubbles.map((pictureBubble) => {

@@ -20,7 +20,7 @@ const SpeechBubblePanel = () => {
 
   return (
     <SpeechBubblePanelContainer>
-      <SpeechBubblePanelTitle>Speech bubble</SpeechBubblePanelTitle>
+      <SpeechBubblePanelTitle>Speech bubbles</SpeechBubblePanelTitle>
       <SpeechBubbles>
         {bubbles.map((bubble) => {
           const { id, bubbleType } = bubble;

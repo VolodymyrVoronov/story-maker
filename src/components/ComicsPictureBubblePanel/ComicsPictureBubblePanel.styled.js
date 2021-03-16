@@ -41,7 +41,7 @@ const ComicsPictureBubble = styled.div`
   height: 60px;
 
   background-image: url("${(props) => props.comicsPictureBubbleBg}");
-  background-size: 80%;
+  background-size: 75%;
   background-position: center center;
   background-repeat: no-repeat;
 
