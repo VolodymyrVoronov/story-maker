@@ -8,6 +8,16 @@ import bubble05 from "./../../assets/bubble05.png";
 import bubble06 from "./../../assets/bubble06.png";
 import bubble07 from "./../../assets/bubble07.png";
 
+import comicsPictureBubble01 from "./../../assets/graphicBubble01.png";
+import comicsPictureBubble02 from "./../../assets/graphicBubble02.png";
+import comicsPictureBubble03 from "./../../assets/graphicBubble03.png";
+import comicsPictureBubble04 from "./../../assets/graphicBubble04.png";
+import comicsPictureBubble05 from "./../../assets/graphicBubble05.png";
+import comicsPictureBubble06 from "./../../assets/graphicBubble06.png";
+import comicsPictureBubble07 from "./../../assets/graphicBubble07.png";
+import comicsPictureBubble08 from "./../../assets/graphicBubble08.png";
+import comicsPictureBubble09 from "./../../assets/graphicBubble09.png";
+
 const initialState = {
   isStartButtonClick: false,
   canvasColorsPalette: [
@@ -237,6 +247,17 @@ const initialState = {
     },
   ],
   speechBubbles: [],
+  comicsPictureBubbles: [
+    { id: 1, comicsPictureBubbleType: comicsPictureBubble01 },
+    { id: 2, comicsPictureBubbleType: comicsPictureBubble02 },
+    { id: 3, comicsPictureBubbleType: comicsPictureBubble03 },
+    { id: 4, comicsPictureBubbleType: comicsPictureBubble04 },
+    { id: 5, comicsPictureBubbleType: comicsPictureBubble05 },
+    { id: 6, comicsPictureBubbleType: comicsPictureBubble06 },
+    { id: 7, comicsPictureBubbleType: comicsPictureBubble07 },
+    { id: 8, comicsPictureBubbleType: comicsPictureBubble08 },
+    { id: 9, comicsPictureBubbleType: comicsPictureBubble09 },
+  ],
 };
 
 const appReducer = (state = initialState, action) => {

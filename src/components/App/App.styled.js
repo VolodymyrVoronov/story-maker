@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 const AppBody = styled.main`
   display: block;
 
-  min-width: 1028px;
+  min-width: 1200px;
 
   ${(props) =>
     props.startButtonWasClicked

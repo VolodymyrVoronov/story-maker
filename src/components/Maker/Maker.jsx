@@ -16,6 +16,7 @@ import Button from "../UI/Button/Button";
 import CanvasColorControl from "./../CanvasColorControl/CanvasColorControl";
 import GraphicPanel from "./../GraphicPanel/GraphicPanel";
 import SpeechBubblePanel from "./../SpeechBubblePanel/SpeechBubblePanel";
+import ComicsPictureBubblePanel from "./../ComicsPictureBubblePanel/ComicsPictureBubblePanel";
 
 import {
   MakerContainer,
@@ -67,6 +68,7 @@ const Maker = () => {
         <CanvasColorControl />
         <GraphicPanel />
         <SpeechBubblePanel />
+        <ComicsPictureBubblePanel />
       </MakerControls>
 
       <MakerBody
