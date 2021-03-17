@@ -60,4 +60,14 @@ export const addNewComicsPictureBubbleAC = makeActionCreator(
   `comicsPictureBubbleId`
 );
 
+export const deleteComicsPictureBubbleAC = makeActionCreator(
+  ActionType.DELETE_COMICS_PICTURE_BUBBLE,
+  `comicsPictureBubbleId`
+);
+
+export const setZIndexForComicsPictureBubbleAC = makeActionCreator(
+  ActionType.SET_Z_INDEX_FOR_COMICS_PICTURE_BUBBLE,
+  `comicsPictureBubbleId`
+);
+
 export const clearCanvasAC = makeActionCreator(ActionType.CLEAR_CANVAS);

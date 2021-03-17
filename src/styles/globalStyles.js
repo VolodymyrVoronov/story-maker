@@ -145,9 +145,10 @@ const GlobalStyles = createGlobalStyle`
     border-spacing: 0;
   }
   html {
+    box-sizing: border-box;
+    
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 
     font-family: "Fredericka the Great", "Arial", cursive;
     letter-spacing: 1px;

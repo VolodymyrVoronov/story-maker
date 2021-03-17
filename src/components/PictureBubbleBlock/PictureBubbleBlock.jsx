@@ -2,6 +2,8 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { Rnd } from "react-rnd";
 
+import { deleteComicsPictureBubbleAC } from "../../redux/actions/actions";
+
 import {
   PictureBubbleBlockButtons,
   PictureBubbleBlockButton,
@@ -41,7 +43,7 @@ const PictureBubbleBlock = ({
   };
 
   const onDeleteButtonClick = (id) => {
-    // dispatch(deletePictureBubbleBlockAC(id));
+    dispatch(deleteComicsPictureBubbleAC(id));
   };
 
   return (

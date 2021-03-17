@@ -7,6 +7,7 @@ import html2canvas from "html2canvas";
 import {
   setZIndexForGraphicFrameAC,
   setZIndexForTextFrameAC,
+  setZIndexForComicsPictureBubbleAC,
   clearCanvasAC,
 } from "./../../redux/actions/actions";
 
@@ -48,7 +49,7 @@ const Maker = () => {
     });
   };
 
-  const onClearCnavasClick = (params) => {
+  const onClearCnavasClick = () => {
     dispatch(clearCanvasAC());
   };
 
@@ -61,7 +62,7 @@ const Maker = () => {
   };
 
   const onPictureBubbleBlockClick = (id) => {
-    console.log(id);
+    dispatch(setZIndexForComicsPictureBubbleAC(id));
   };
 
   return (

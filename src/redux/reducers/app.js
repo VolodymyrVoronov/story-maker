@@ -360,15 +360,15 @@ const appReducer = (state = initialState, action) => {
     case ActionType.SET_Z_INDEX_FOR_TEXT_FRAME: {
       return {
         ...state,
-        speechBubbles: state.speechBubbles.map((speedBubble) => {
-          if (speedBubble.id === action.textFrameId) {
+        speechBubbles: state.speechBubbles.map((speechBubble) => {
+          if (speechBubble.id === action.textFrameId) {
             return {
-              ...speedBubble,
+              ...speechBubble,
               zIndex: 30,
             };
           } else {
             return {
-              ...speedBubble,
+              ...speechBubble,
               zIndex: 20,
             };
           }
@@ -380,7 +380,7 @@ const appReducer = (state = initialState, action) => {
       return {
         ...state,
         speechBubbles: state.speechBubbles.filter(
-          (speedBubble) => speedBubble.id !== action.textFrameId
+          (speechBubble) => speechBubble.id !== action.textFrameId
         ),
       };
     }
@@ -388,14 +388,14 @@ const appReducer = (state = initialState, action) => {
     case ActionType.ADD_NEW_TEXT_BODY: {
       return {
         ...state,
-        speechBubbles: state.speechBubbles.map((speedBubble) => {
-          if (speedBubble.id === action.textFrameId) {
+        speechBubbles: state.speechBubbles.map((speechBubble) => {
+          if (speechBubble.id === action.textFrameId) {
             return {
-              ...speedBubble,
+              ...speechBubble,
               textBody: action.newText,
             };
           }
-          return speedBubble;
+          return speechBubble;
         }),
       };
     }
@@ -416,6 +416,37 @@ const appReducer = (state = initialState, action) => {
           newPictureBubble,
           ...state.comicsPictureBubbleItems,
         ],
+      };
+    }
+
+    case ActionType.DELETE_COMICS_PICTURE_BUBBLE: {
+      return {
+        ...state,
+        comicsPictureBubbleItems: state.comicsPictureBubbleItems.filter(
+          (comicsPictureBubble) =>
+            comicsPictureBubble.id !== action.comicsPictureBubbleId
+        ),
+      };
+    }
+
+    case ActionType.SET_Z_INDEX_FOR_COMICS_PICTURE_BUBBLE: {
+      return {
+        ...state,
+        comicsPictureBubbleItems: state.comicsPictureBubbleItems.map(
+          (comicsPictureBubble) => {
+            if (comicsPictureBubble.id === action.comicsPictureBubbleId) {
+              return {
+                ...comicsPictureBubble,
+                zIndex: 50,
+              };
+            } else {
+              return {
+                ...comicsPictureBubble,
+                zIndex: 40,
+              };
+            }
+          }
+        ),
       };
     }
 
